@@ -1,4 +1,5 @@
 const day_night = document.querySelectorAll('.version');
+const icon = document.querySelectorAll('.version svg use');
 const menu_open = document.querySelector('.ham');
 const menu_close = document.querySelector('.close');
 const phone_menu = document.getElementById('phone-menu');
@@ -30,6 +31,9 @@ day_night.forEach(version => (
         day.forEach(element => {
             element.style.display = 'block';
         });
+        icon.forEach(element => {
+            element.setAttribute('xlink:href', './img/sprite.svg#dark');
+        });
     } else {
         document.querySelector('body').classList.add('dark');
         night.forEach(element => {
@@ -37,6 +41,9 @@ day_night.forEach(version => (
         });
         day.forEach(element => {
             element.style.display = 'none';
+        });
+        icon.forEach(element => {
+            element.setAttribute('xlink:href', './img/sprite.svg#light');
         });
     }
 })));
