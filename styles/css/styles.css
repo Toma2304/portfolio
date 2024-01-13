@@ -74,8 +74,9 @@ body {
           margin-right: 10px; }
           body .header .container div .version svg {
             width: 20px;
-            height: 20px;
-            fill: black; }
+            height: 20px; }
+            body .header .container div .version svg use {
+              fill: black; }
         body .header .container div .ham {
           width: 30px;
           height: 30px; }
