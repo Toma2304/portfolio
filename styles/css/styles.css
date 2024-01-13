@@ -225,11 +225,11 @@ body .home {
       margin-right: 15px; }
       body .home .container .list .item:first-child {
         margin-left: 15px; }
-    body .home .container .list svg {
-      width: 20px;
-      height: 20px; }
-      body .home .container .list svg use {
-        fill: black; }
+      body .home .container .list .item svg {
+        width: 20px;
+        height: 20px; }
+        body .home .container .list .item svg use {
+          fill: black; }
   body .home .container .big-box {
     text-align: center;
     display: flex;
@@ -267,7 +267,7 @@ body .home {
 
 body.dark .home .container .list {
   background-color: var(--secondary-text-night); }
-  body.dark .home .container .list svg use {
+  body.dark .home .container .list .item svg use {
     fill: white; }
 
 body.dark .home .container .big-box .text {

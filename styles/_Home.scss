@@ -22,17 +22,18 @@ body {
                     &:first-child {
                         margin-left: 15px;
                     }
-                }
+                    svg {
+                        width: 20px;
+                        height: 20px;
 
-                svg {
-                    width: 20px;
-                    height: 20px;
-
-                    use {
-                        fill: black;
+                        use {
+                            fill: black;
+                        }
                     }
                 }
 
+
+                
             }
 
             .big-box {
@@ -103,8 +104,10 @@ body {
                 .list {
                     background-color: var(--secondary-text-night);
 
-                    svg use {
-                        fill: white;
+                    .item {
+                        svg use {
+                            fill: white;
+                        }
                     }
                 }
                 .big-box {
