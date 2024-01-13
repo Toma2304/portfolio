@@ -24,8 +24,12 @@ body {
                     }
                 }
 
-                img {
+                svg {
                     width: 20px;
+
+                    use {
+                        fill: black;
+                    }
                 }
 
             }
@@ -97,6 +101,10 @@ body {
             .container {
                 .list {
                     background-color: var(--secondary-text-night);
+
+                    svg use {
+                        fill: white;
+                    }
                 }
                 .big-box {
                     .text {

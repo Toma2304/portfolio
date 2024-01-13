@@ -225,8 +225,10 @@ body .home {
       margin-right: 15px; }
       body .home .container .list .item:first-child {
         margin-left: 15px; }
-    body .home .container .list img {
+    body .home .container .list svg {
       width: 20px; }
+      body .home .container .list svg use {
+        fill: black; }
   body .home .container .big-box {
     text-align: center;
     display: flex;
@@ -264,6 +266,8 @@ body .home {
 
 body.dark .home .container .list {
   background-color: var(--secondary-text-night); }
+  body.dark .home .container .list svg use {
+    fill: white; }
 
 body.dark .home .container .big-box .text {
   color: var(--primary-text-night); }
