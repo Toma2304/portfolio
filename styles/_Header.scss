@@ -1,0 +1,353 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+//font-family: 'Imperial Script', cursive;
+//font-family: 'Miltonian Tattoo', serif;
+//font-family: 'Gilda Display', serif;
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    width: 100%;
+    font-family: 'Gilda Display', serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+
+    background-color: var(--bg-day);
+
+    .header {
+        padding: 10px 0;
+        background-color: var(--header-day);
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+    
+            .logo {
+                font-family: 'Imperial Script', cursive;
+                font-size: 45px;
+                font-style: normal;
+                font-weight: 400;
+    
+                text-decoration: none;
+    
+                color: var(--logo-color-day);
+            }
+    
+            .list-pc {
+                display: none;
+    
+                .item {
+                    margin-right: 24px;
+                    
+                    .link {
+                        font-size: 16px;
+                        color: var(--primary-text-day);
+    
+                        transition: var(--animation);
+    
+                        &:hover, &:focus {
+                            color: var(--accent-day);
+                        }
+                    }
+                }
+    
+                
+            }
+        
+            div {
+                display: flex;
+                align-items: center;
+                .version {
+                    width: 20px;
+                    height: 20px;
+                    margin-right: 10px;
+                    svg {
+                        width: 20px;
+                        height: 20px;
+                        fill: black;
+                    }
+                }
+    
+                .ham {
+                    width: 30px;
+                    height: 30px;
+                    svg {
+                        width: 30px;
+                        height: 30px;
+                        fill: black;
+                    }
+                }
+            }
+    
+            #phone-menu {
+                width: 100%;
+                height: 100vh;
+                position:absolute;
+                top: 0;
+                left: 0;
+                display: none;
+    
+                background-color:var(--header-day);
+    
+                .container {
+                    padding: 10px 15px;
+                    display: block;
+    
+                    .box {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+    
+                        div {
+                            display: flex;
+                            align-items: center;
+                            .version {
+                                width: 20px;
+                                height: 20px;
+                                margin-right: 10px;
+                                svg {
+                                    width: 20px;
+                                    height: 20px;
+                                    fill: black;
+                                }
+                            }
+                        }
+    
+                        .close {
+                            width: 30px;
+                            height: 30px;
+                            svg {
+                                width: 30px;
+                                height: 30px;
+                                fill: black;
+                            }
+                        }
+                    }
+    
+                    .list-phone {
+                        margin-top: 60px;
+    
+                        .item:not(:last-child) {
+                            margin-bottom: 16px;
+                        }
+    
+                        .link {
+                            font-size: 24px;
+                            line-height: normal;
+                            color: var(--primary-text-day);
+    
+                            transition: var(--animation);
+    
+                            &:hover, &:focus {
+                                color: var(--accent-day);
+                            }
+                        }
+                    }
+                }
+            }
+    
+        }
+    
+    }
+
+    &.dark {
+        background-color: var(--bg-night);
+
+        .header {
+            background-color: var(--header-night);
+            .container {
+                .logo {
+                    color: var(--logo-color-night);
+                }
+                .list-pc {
+                    .item {
+                        .link {
+                            color: var(--primary-text-night);
+
+                            &:hover, &:focus {
+                                color: var(--accent-night);
+                            }
+                        }
+                    }
+                }
+
+                div {
+                    svg {
+                        fill: white;
+                    }
+                }
+
+                #phone-menu {
+                    background-color: var(--header-night);
+
+                    .container {
+                        .box {
+                            .logo {
+                                color: var(--logo-color-night);
+                            }
+
+                            div {
+                                svg {
+                                    fill: white;
+                                }
+                            }
+
+       
+                        }                     
+                        
+                        .list-phone {
+                                .link {
+                                    color: var(--primary-text-night);
+
+                                    &:hover, &:focus {
+                                        color: var(--accent-night);
+                                    }
+                                }
+
+                            }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.container {
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.night {
+    display: none;
+}
+
+
+
+@media screen and (min-width: 768px) {
+    .container {
+        padding: 0 30px;
+    }
+    body {
+        .header {
+            padding: 20px 0;
+            .container {
+                width: 768px;
+    
+                .list-pc {
+                    display: flex;
+                    align-items: center;
+                }
+    
+                div {
+                    .ham {
+                        display: none;
+                    }
+                }
+    
+                #phone-menu  {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    .container {
+        padding: 0 100px;
+    }
+
+    body {
+        .header {
+            .container {
+                width: 1024px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1366px) {
+    .container {
+        padding: 0 120px;
+    }
+
+   body {
+    .header {
+        padding: 25px 0;
+        .container {
+            width: 1366px;
+
+            .logo {
+                font-size: 60px;
+            }
+
+            .list-pc {
+                .item {
+                    margin-right: 40px;
+                    
+                    .link {
+                        font-size: 18px;
+                        color: var(--primary-text-day);
+    
+                        transition: var(--animation);
+    
+                        &:hover, &:focus {
+                            color: var(--accent-day);
+                        }
+                    }
+                }    
+            }
+        }
+    }
+   }
+}
+
+@media screen and (min-width: 1920px) {
+    .container {
+        padding: 0 200px;
+    }
+
+   body {
+    .header {
+        padding: 30px 0;
+        .container {
+            width: 1920px;
+
+            .list-pc {
+                .item {
+                    margin-right: 50px;
+
+                    .link {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+   }
+}
