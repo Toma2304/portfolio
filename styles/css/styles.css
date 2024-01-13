@@ -82,7 +82,7 @@ body {
           body .header .container div .ham svg {
             width: 30px;
             height: 30px;
-            fill: black; }
+            fill: white; }
       body .header .container #phone-menu {
         width: 100%;
         height: 100vh;
@@ -115,7 +115,7 @@ body {
               body .header .container #phone-menu .container .box .close svg {
                 width: 30px;
                 height: 30px;
-                fill: black; }
+                fill: white; }
           body .header .container #phone-menu .container .list-phone {
             margin-top: 60px; }
             body .header .container #phone-menu .container .list-phone .item:not(:last-child) {
@@ -137,17 +137,17 @@ body {
         color: var(--primary-text-night); }
         body.dark .header .container .list-pc .item .link:hover, body.dark .header .container .list-pc .item .link:focus {
           color: var(--accent-night); }
-      body.dark .header .container div svg use {
+      body.dark .header .container div svg {
         fill: white; }
-      body.dark .header .container div .ham svg use {
+      body.dark .header .container div .ham svg {
         fill: white; }
       body.dark .header .container #phone-menu {
         background-color: var(--header-night); }
         body.dark .header .container #phone-menu .container .box .logo {
           color: var(--logo-color-night); }
-        body.dark .header .container #phone-menu .container .box div svg use {
+        body.dark .header .container #phone-menu .container .box div .version svg {
           fill: white; }
-        body.dark .header .container #phone-menu .container .box .close svg use {
+        body.dark .header .container #phone-menu .container .box .close svg {
           fill: white; }
         body.dark .header .container #phone-menu .container .list-phone .link {
           color: var(--primary-text-night); }
@@ -242,7 +242,8 @@ body .home {
     body .home .container .big-box .text {
       margin: 0 auto;
       max-width: 300px;
-      margin-bottom: 20px; }
+      margin-bottom: 20px;
+      font-size: 14px; }
       body .home .container .big-box .text:first-child {
         margin-bottom: 8px; }
       body .home .container .big-box .text span {
