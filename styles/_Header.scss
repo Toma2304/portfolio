@@ -88,9 +88,7 @@ body {
                     svg {
                         width: 20px;
                         height: 20px;
-                        use {
-                            fill: black;
-                        }
+                        fill:black;
                     }
                 }
     
@@ -198,7 +196,7 @@ body {
                 }
 
                 div {
-                    svg {
+                    svg use {
                         fill: white;
                     }
                 }
@@ -213,7 +211,7 @@ body {
                             }
 
                             div {
-                                svg {
+                                svg use {
                                     fill: white;
                                 }
                             }
