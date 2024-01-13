@@ -139,11 +139,15 @@ body {
           color: var(--accent-night); }
       body.dark .header .container div svg use {
         fill: white; }
+      body.dark .header .container div .ham svg use {
+        fill: white; }
       body.dark .header .container #phone-menu {
         background-color: var(--header-night); }
         body.dark .header .container #phone-menu .container .box .logo {
           color: var(--logo-color-night); }
         body.dark .header .container #phone-menu .container .box div svg use {
+          fill: white; }
+        body.dark .header .container #phone-menu .container .box .close svg use {
           fill: white; }
         body.dark .header .container #phone-menu .container .list-phone .link {
           color: var(--primary-text-night); }

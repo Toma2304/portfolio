@@ -199,6 +199,12 @@ body {
                     svg use {
                         fill: white;
                     }
+
+                    .ham {
+                        svg use {
+                            fill: white;
+                        }
+                    }
                 }
 
                 #phone-menu {
@@ -211,6 +217,12 @@ body {
                             }
 
                             div {
+                                svg use {
+                                    fill: white;
+                                }
+                            }
+
+                            .close {
                                 svg use {
                                     fill: white;
                                 }
