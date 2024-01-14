@@ -11,11 +11,11 @@ const day = document.querySelectorAll(".day");
 
 if (document.querySelector("body").classList.contains("dark")) {
   icon.forEach((element) => {
-    element.setAttribute("xlink:href", "../img/sprite.svg#light");
+    element.setAttribute("xlink:href", "./img/sprite.svg#light");
   });
 } else {
   icon.forEach((element) => {
-    element.setAttribute("xlink:href", "../img/sprite.svg#dark");
+    element.setAttribute("xlink:href", "./img/sprite.svg#dark");
   });
 }
 
