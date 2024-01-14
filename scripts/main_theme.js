@@ -11,7 +11,7 @@ const day = document.querySelectorAll(".day");
 
 if (document.querySelector("body").classList.contains("dark")) {
   icon.forEach((element) => {
-    element.setAttribute("xlink:href", "../img/sprite.svg#light");
+    element.setAttribute("xlink:href", "./img/sprite.svg#light");
   });
   night.forEach((element) => {
     element.style.display = "block";
@@ -27,7 +27,7 @@ if (document.querySelector("body").classList.contains("dark")) {
     element.style.display = "block";
   });
   icon.forEach((element) => {
-    element.setAttribute("xlink:href", "../img/sprite.svg#dark");
+    element.setAttribute("xlink:href", "./img/sprite.svg#dark");
   });
 }
 
