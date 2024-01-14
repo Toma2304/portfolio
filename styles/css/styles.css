@@ -92,6 +92,7 @@ body {
         top: 0;
         left: 0;
         display: none;
+        z-index: 100;
         background-color: var(--header-day); }
         body .header .container #phone-menu .container {
           padding: 10px 15px;
