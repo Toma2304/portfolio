@@ -5,12 +5,14 @@
   --primary-text-day: #000;
   --secondary-text-day: #68B0AB;
   --accent-day: #FF7E67;
+  --skill-bg-day: rgba(255, 126, 103, 0.30);
   --logo-color-night: #fff;
   --bg-night: #20124A;
   --header-night: #18122B;
   --primary-text-night: #fff;
   --secondary-text-night: #A6C5F9;
   --accent-night: #A6C5F9;
+  --skill-bg-night: rgba(166, 197, 249, 0.30);
   --box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.25);
   --animation: all .5s ease-in-out; }
 
@@ -515,10 +517,53 @@ body.dark .contact .container {
       font-size: 18px; } }
 
 body .skills {
-  padding: 40px 0; }
+  padding: 40px 0;
+  color: var(--primary-text-day); }
   body .skills .container {
     display: flex;
     flex-direction: column;
     align-items: center; }
     body .skills .container .title {
-      font-size: 28px; }
+      font-size: 28px;
+      margin-bottom: 24px; }
+    body .skills .container #skill-list .content {
+      width: 220px;
+      display: none;
+      padding: 28px 40px 40px 40px;
+      border-radius: 40px;
+      background-color: var(--skill-bg-day); }
+      body .skills .container #skill-list .content .name {
+        text-align: center;
+        font-family: 'Miltonian Tattoo', serif;
+        font-size: 20px;
+        margin-bottom: 16px; }
+      body .skills .container #skill-list .content .box .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center; }
+        body .skills .container #skill-list .content .box .row .text {
+          font-size: 10px;
+          text-transform: uppercase; }
+        body .skills .container #skill-list .content .box .row .stars {
+          display: flex;
+          align-items: center; }
+          body .skills .container #skill-list .content .box .row .stars div {
+            margin-left: 2px;
+            width: 10px;
+            height: 10px;
+            background-color: var(--bg-day); }
+            body .skills .container #skill-list .content .box .row .stars div.color {
+              background-color: var(--accent-day); }
+    body .skills .container #pagination-container {
+      position: absolute;
+      top: 330px;
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      body .skills .container #pagination-container .pagination-btn {
+        border: none;
+        background-color: transparent; }
+        body .skills .container #pagination-container .pagination-btn img {
+          width: 50px;
+          height: 50px; }
