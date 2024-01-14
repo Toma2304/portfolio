@@ -4,20 +4,10 @@ if (localStorage.getItem("theme"))
     .classList.toggle(localStorage.getItem("theme")); //get theme from local storage and set it
 
 const day_night = document.querySelectorAll(".version");
-const icon = document.querySelectorAll(".version svg use");
+const icon = document.querySelectorAll(".ver use");
 
 const night = document.querySelectorAll(".night");
 const day = document.querySelectorAll(".day");
-
-if (document.querySelector("body").classList.contains("dark")) {
-  icon.forEach((element) => {
-    element.setAttribute("xlink:href", "../img/sprite.svg#light");
-  });
-} else {
-  icon.forEach((element) => {
-    element.setAttribute("xlink:href", "../img/sprite.svg#dark");
-  });
-}
 
 if (document.querySelector("body").classList.contains("dark")) {
   icon.forEach((element) => {
