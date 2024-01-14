@@ -1,101 +1,102 @@
 body {
+  .proj {
+    padding: 50px 0;
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      color: var(--primary-text-day);
+      .title {
+        font-size: 28px;
+      }
+
+      .text {
+        margin: 24px 0 16px 0;
+        text-align: center;
+        font-size: 14px;
+        max-width: 220px;
+      }
+
+      .btn {
+        padding: 6px 23px;
+
+        border-radius: 20px;
+        border: 1px solid var(--accent-day);
+
+        background-color: var(--accent-day);
+        color: var(--primary-text-night);
+
+        line-height: 1;
+
+        transition: var(--animation);
+
+        font-size: 14px;
+
+        &:hover,
+        &:focus {
+          background-color: var(--primary-text-night);
+          color: var(--accent-day);
+        }
+      }
+    }
+  }
+
+  &.dark {
     .proj {
-        padding: 50px 0;
-        .container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+      .container {
+        color: var(--primary-text-night);
 
-            color: var(--primary-text-day);
-            .title {
-                font-size: 28px;
-            }
+        .btn {
+          border: 1px solid var(--accent-night);
+          background-color: var(--accent-night);
+          color: var(--bg-night);
 
-            .text {
-                margin: 24px 0 16px 0;
-                text-align: center;
-                font-size: 14px;
-                max-width: 220px;
-            }
-
-            .btn {
-                padding: 6px 23px;
-
-                border-radius: 20px;
-                border: 1px solid var(--accent-day);
-
-                background-color: var(--accent-day);
-                color: var(--primary-text-night);
-
-                line-height: 1;
-
-                transition: var(--animation);
-                
-                font-size: 14px;
-
-                &:hover, &:focus {
-                    background-color: var(--primary-text-night);
-                    color: var(--accent-day);
-                }
-
-            }
+          &:hover,
+          &:focus {
+            background-color: var(--bg-night);
+            color: var(--accent-night);
+          }
         }
+      }
     }
-
-    &.dark {
-        .proj {
-            .container { 
-                color: var(--primary-text-night);
-
-                .btn {
-                    border: 1px solid var(--accent-night);
-                    background-color: var(--accent-night);
-                    color: var(--bg-night);
-
-                    &:hover, &:focus {
-                        background-color: var(--bg-night);
-                        color: var(--accent-night);
-                    }
-                }
-            }
-        }
-    }
+  }
 }
 
 @media screen and (min-width: 768px) {
-    body {
-        .proj {
-            padding: 70px 0;
-            .container {
-                .text {
-                    font-size: 16px;
-                    max-width: 400px;
-                }
-            }
+  body {
+    .proj {
+      padding: 70px 0;
+      .container {
+        .text {
+          font-size: 16px;
+          max-width: 400px;
         }
+      }
     }
+  }
 }
 
 @media screen and (min-width: 1024px) {
-    body {
-        .proj {
-            padding: 90px 0;
-            .container {
-                .title {
-                    font-size: 38px;
-                }
-
-                .text {
-                    margin: 36px 0 28px 0;
-                    font-size: 18px;
-                }
-
-                .btn {
-                    padding: 8px 30px;
-
-                    font-size: 18px;
-                }
-            }
+  body {
+    .proj {
+      padding: 90px 0;
+      .container {
+        .title {
+          font-size: 38px;
         }
+
+        .text {
+          margin: 36px 0 28px 0;
+          font-size: 18px;
+        }
+
+        .btn {
+          padding: 8px 30px;
+
+          font-size: 18px;
+        }
+      }
     }
+  }
 }
