@@ -527,7 +527,7 @@ body .skills {
       font-size: 28px;
       margin-bottom: 24px; }
     body .skills .container #skill-list .content {
-      width: 220px;
+      width: 280px;
       display: none;
       padding: 28px 40px 40px 40px;
       border-radius: 40px;
@@ -535,28 +535,29 @@ body .skills {
       body .skills .container #skill-list .content .name {
         text-align: center;
         font-family: 'Miltonian Tattoo', serif;
-        font-size: 20px;
-        margin-bottom: 16px; }
+        font-size: 22px;
+        margin-bottom: 28px; }
       body .skills .container #skill-list .content .box .row {
         display: flex;
         justify-content: space-between;
-        align-items: center; }
+        align-items: center;
+        margin-bottom: 5px; }
         body .skills .container #skill-list .content .box .row .text {
-          font-size: 10px;
+          font-size: 14px;
           text-transform: uppercase; }
         body .skills .container #skill-list .content .box .row .stars {
           display: flex;
           align-items: center; }
           body .skills .container #skill-list .content .box .row .stars div {
-            margin-left: 2px;
-            width: 10px;
-            height: 10px;
+            margin-left: 5px;
+            width: 15px;
+            height: 15px;
             background-color: var(--bg-day); }
             body .skills .container #skill-list .content .box .row .stars div.color {
               background-color: var(--accent-day); }
     body .skills .container #pagination-container {
       position: absolute;
-      top: 330px;
+      top: 370px;
       margin-top: 20px;
       display: flex;
       justify-content: center;
@@ -567,3 +568,12 @@ body .skills {
         body .skills .container #pagination-container .pagination-btn img {
           width: 50px;
           height: 50px; }
+
+body.dark .skills {
+  color: var(--primary-text-night); }
+  body.dark .skills .container .title {
+    color: var(--primary-text-night); }
+  body.dark .skills .container #skill-list .content {
+    background-color: var(--skill-bg-night); }
+    body.dark .skills .container #skill-list .content .box .row .stars div.color {
+      background-color: var(--header-night); }
