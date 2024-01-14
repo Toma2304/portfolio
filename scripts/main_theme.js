@@ -7,6 +7,17 @@ const icon = document.querySelectorAll('.version svg use');
 const night = document.querySelectorAll('.night');
 const day = document.querySelectorAll('.day');
 
+if(document.querySelector('body').classList.contains('dark')) {
+    icon.forEach(element => {
+        element.setAttribute('xlink:href', '../img/sprite.svg#light');
+    });
+} else {
+    icon.forEach(element => {
+        element.setAttribute('xlink:href', '../img/sprite.svg#dark');
+    });
+
+}
+
 
 if(document.querySelector('body').classList.contains('dark')) {
     icon.forEach(element => {
