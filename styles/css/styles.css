@@ -72,15 +72,15 @@ body {
         align-items: center; }
         body .header .container div .version {
           width: 20px;
-          height: 20px;
-          margin-right: 10px; }
+          height: 20px; }
           body .header .container div .version svg {
             width: 20px;
             height: 20px;
             fill: black; }
         body .header .container div .ham {
           width: 30px;
-          height: 30px; }
+          height: 30px;
+          margin-left: 10px; }
           body .header .container div .ham svg {
             width: 30px;
             height: 30px;
@@ -355,7 +355,7 @@ body.dark .home .container .big-box .box .btn {
           align-items: center; }
           body .home .container .big-box .box .title {
             margin-bottom: 28px;
-            font-size: 30px; }
+            font-size: 32px; }
           body .home .container .big-box .box .text {
             max-width: 160px;
             margin: 0; }
@@ -433,7 +433,8 @@ body .proj {
       background-color: var(--accent-day);
       color: var(--primary-text-night);
       line-height: 1;
-      transition: var(--animation); }
+      transition: var(--animation);
+      font-size: 14px; }
       body .proj .container .btn:hover, body .proj .container .btn:focus {
         background-color: var(--primary-text-night);
         color: var(--accent-day); }
@@ -449,13 +450,15 @@ body.dark .proj .container {
       color: var(--accent-night); }
 
 @media screen and (min-width: 768px) {
-  body .proj .container .text {
-    font-size: 16px;
-    max-width: 400px; } }
+  body .proj {
+    padding: 70px 0; }
+    body .proj .container .text {
+      font-size: 16px;
+      max-width: 400px; } }
 
 @media screen and (min-width: 1024px) {
   body .proj {
-    padding: 70px 0; }
+    padding: 90px 0; }
     body .proj .container .title {
       font-size: 38px; }
     body .proj .container .text {
@@ -504,12 +507,14 @@ body.dark .contact .container {
   color: var(--primary-text-night); }
 
 @media screen and (min-width: 768px) {
-  body .contact .container .text {
-    font-size: 16px; } }
+  body .contact {
+    padding: 70px 0; }
+    body .contact .container .text {
+      font-size: 16px; } }
 
 @media screen and (min-width: 1024px) {
   body .contact {
-    padding: 70px 0; }
+    padding: 90px 0; }
     body .contact .container .title {
       font-size: 38px;
       margin-bottom: 40px; }
@@ -578,3 +583,56 @@ body.dark .skills {
     background-color: var(--skill-bg-night); }
     body.dark .skills .container #skill-list .content .box .row .stars div.color {
       background-color: var(--header-night); }
+
+@media screen and (min-width: 768px) {
+  body .skills {
+    padding: 70px 0; }
+    body .skills .container {
+      width: 768px;
+      position: relative; }
+      body .skills .container .title {
+        font-size: 30px;
+        margin-bottom: 50px; }
+      body .skills .container #skill-list .content {
+        width: 400px;
+        padding: 32px 60px 50px 60px; }
+        body .skills .container #skill-list .content .name {
+          margin-bottom: 40px; }
+        body .skills .container #skill-list .content .box .row {
+          margin-bottom: 10px; }
+          body .skills .container #skill-list .content .box .row .text {
+            font-size: 18px; }
+          body .skills .container #skill-list .content .box .row .stars div {
+            width: 20px;
+            height: 20px;
+            margin-left: 8px; }
+      body .skills .container #pagination-container {
+        width: 100%;
+        justify-content: space-between;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%); } }
+
+@media screen and (min-width: 1024px) {
+  body .skills {
+    padding: 90px 0; }
+    body .skills .container {
+      width: 1024px;
+      position: relative; }
+      body .skills .container .title {
+        font-size: 38px; }
+      body .skills .container #skill-list .content {
+        width: 450px;
+        padding: 50px 70px 64px 70px; }
+        body .skills .container #skill-list .content .name {
+          margin-bottom: 48px;
+          font-size: 30px;
+          line-height: 1.1; }
+        body .skills .container #skill-list .content .box .row {
+          margin-bottom: 12px; }
+          body .skills .container #skill-list .content .box .row .text {
+            font-size: 20px; }
+          body .skills .container #skill-list .content .box .row .stars div {
+            width: 22px;
+            height: 22px;
+            margin-left: 8px; } }
